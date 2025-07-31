@@ -16,7 +16,8 @@ MaxDepthBinaryTree maxDepthBinaryTree;
     void testMaxDept(){
         BinaryTree tree = new BinaryTree();
         int[] inputValues = {3, 9, 20, 15, 7};  // Like user input or from DB/API
-        for (int val : inputValues) {
+        int[] inputValues2 = {3, 9, 20, 15, 7,4,12,15};  // Like user input or from DB/API
+        for (int val : inputValues2) {
             tree.insert(val);
         }
         int depth = maxDepthBinaryTree.maxDept(tree.root);
